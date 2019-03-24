@@ -1,0 +1,29 @@
+-------------------------------
+AnaSayfa
+1) Cross-Platform-> Xamarin.Forms
+2) Yani proje oluþturduk. (Blank + Android + Windows(UWP) + .NET Standart)
+3) Normal projeden MainPage sýnýfýný sildik.
+4) Normal projeye Views adýnda bir klasör açtýk ve içerisine Add+NewItem+ContentPage(AnaSayfa adýnda) ekledik.
+5) App.xaml.cs içerisinde baþlangýç sayfasý olarak AnaSayfa yý tanýmladýk.
+6) Anasayfa.xaml içerisine label ve button nesneleri tanýmladýk. Anasayfa.cs içerisinede buttonu tetikletecek kodlarý ekledik.
+7) Anasayfa cs ve xaml içerisinde renk tanýmlamalarý ve iþlemlerini yaptýk.
+8) Anasayfa.xaml içerisine combobox gibi çalýþan picker nesnesi ekledik(color).Anasayfa.cs de ise o nesneye ve o nesneden seçilene ulaþmak için gerekli kodlarý yazdýk.
+-------------------------------
+1) Normal projede Model klasoru açtýk ve içerisine Kullanici adlý bir sýnýf ekledik, propertylerini yazdýk.
+2) Model klasoru içerisine MockData adlý sýnýf açtýk. Orada bir kullanici listesi oluþturduk.
+3) Anasayfa.xaml içerisine  bir combobox daha ekledik(Kullanici). Anasayfa.cs de ise o nesneye ve o nesneden seçilene ulaþmak için gerekli kodlarý yazdýk.
+4) Anasayfa.xaml içerisine  bir combobox daha ekledik(KullaniciBinding). Anasayfa.cs de ise o nesneye ve o nesneden seçilene ulaþmak için gerekli kodlarý yazdýk.
+5) Anasayfa.xaml içerisine  bir datetimepicker ekledik. Anasayfa.cs de ise o nesneye ve o nesneden seçilene ulaþmak için gerekli kodlarý yazdýk.
+6) Anasayfa.xaml içerisine  bir timepicker ekledik. Anasayfa.cs de ise o nesneye ve o nesneden seçilene ulaþmak için gerekli kodlarý yazdýk.
+-------------------------------
+KayitForm
+1) View klasorü içerisine Add+NewItem+ContentPageKayitForm adýnda) ekledik.
+2) App.xaml.cs içerisinde baþlangýç sayfasý olarak KayitForm u tanýmladýk.
+3) KayýtForm.xaml içerisine label ve entry nesneleri ekledik.
+4) KayýtForm.cs içerisine de bir sonraki satýra geçme iþlemi için gerekli kodlarý yazdýk.
+-------------------------------
+ListView (Taylor Swifth api)
+1) 
+
+*** View daki nesnelerimize backend tarafýndan eriþmek için Name propertysini kullanýyoruz.
+*** x ile yazdýklarýmýz hem class tarfýnda hem de xaml tarafýnda çalýþýyor.

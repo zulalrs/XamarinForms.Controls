@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinForms.Controls.Views.AnaSayfa">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblMesaj"
+               Text="Hello Efe"
+               BackgroundColor="LightPink"
+               FontSize="Large"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center" />
+
+            <!--Backendde bu eventın tetiklenebilmesi için orada OnButtonClicked isimli bir metod oluşturmalıyız. 1.yöntem-->
+            <Button Text="Button1"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"
+               Clicked="OnButtonClicked" />
+
+            <Button x:Name="btnDondur" Text="Button2"
+               VerticalOptions="StartAndExpand"
+               HorizontalOptions="Center" />
+
+            <DatePicker
+                x:Name="dtpTarih"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"/>
+
+            <TimePicker
+                x:Name="dtpSaat"
+                Format="T"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+            />
+
+            <Picker x:Name="cmbKisiler"
+                    Title="Kişi Seçiniz">
+            </Picker>
+
+            <Picker x:Name="cmbKisilerBinding"
+                    Title="Kişi Seçiniz"
+                    ItemsSource="{Binding Kullanicilar}">
+                    <!--ItemDisplayBinding="{Binding Ad}" Displaymember gibi comboboxın listesinde nesnenin gösterim şekli--> 
+            </Picker>
+
+            <Picker x:Name="cmbRenkler"
+                    Title="Rek Seçiniz">
+                <!--Comboboxta gözükecek verileri picker itemsource da taımladığımız array içerisine yazıyoruz.Combobox işlemleri 1.Yöntem-->
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}"> <!--Comboboxtaki verilerin tipi-->
+                        <x:String>Kırmızı</x:String>
+                        <x:String>Mavi</x:String>
+                        <x:String>Turuncu</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
